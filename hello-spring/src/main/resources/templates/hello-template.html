@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+<!--
+hello! empty 이 부분은 없어도 되지만 서버 없이 열어봐도 열 수 있기 때문에 표시 목적으로 남겨둠
+서버가 실행된 상태로 이 html이 열리면 hello! empty가 'hello ' + ${name}으로 치환되어져 보여짐
+-->
+<!--받아온 모델에서 key값이 name인 것을 찾아 그 value값을 ${name}에 넣어서 보여줌 -->
+</body>
+</html>
